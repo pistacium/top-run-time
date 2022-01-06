@@ -56,7 +56,7 @@ with open(fpath, newline='') as f:
     lines = f.readlines()
     origfile = [line.rstrip() for line in lines]
 
-newf = ['type     start RTA      end RTA        length         time removed\n']
+newf = ['type     start RTA      end RTA        length         time added\n']
 file = file[5:]
 
 igt = file[-1][0].split()
@@ -111,7 +111,7 @@ print(ftime)
 
 newf.append('')
 newf.append(origfile[-1])
-newf.append('retimed IGT for top run retiming to '+ftime[:-3])
+newf.append('retimed IGT for top run retiming to '+ftime)
 #print(newf)
 with open('topretimed.txt', 'w') as f:
     for line in newf:
