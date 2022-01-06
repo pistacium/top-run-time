@@ -111,7 +111,7 @@ print(ftime)
 
 newf.append('')
 newf.append(origfile[-1])
-newf.append('retimed IGT for top run retiming to '+ftime)
+newf.append('retimed IGT for top run retiming to '+ftime[:-3])
 #print(newf)
 with open('topretimed.txt', 'w') as f:
     for line in newf:
