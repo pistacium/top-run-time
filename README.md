@@ -1,5 +1,5 @@
 # top-run-time
-Takes output from RedLime's SpeedRunIGT mod (igt_timer.log) to get the top run retime as per the rules in speedrun.com/mc as well as generating a new file which is a copy of igt_timer.log which specifies what type of pause each one was.
+Takes output from RedLime's SpeedRunIGT mod (igt_timer.log) to get the top run retime as per the rules in speedrun.com/mc as well as generating a new file for describing the splits.
 
 It runs on console without a GUI, and will ask you what type of pause each one was. Just type it out using the key it prints (scp for settings change pause, dlp for dimension load pause, etc.) and hit enter.
 
