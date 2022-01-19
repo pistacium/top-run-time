@@ -106,8 +106,8 @@ for line in file[:-1]:
     print()
 igt = round(igt, 3)
 print('final igt =', igt, 'seconds')
-ftime = str(datetime.timedelta(seconds=igt))
-print(ftime[:-3])
+ftime = (str(datetime.timedelta(seconds=igt)))[:-3]
+print(ftime)
 
 newf.append('')
 newf.append(origfile[-1])
