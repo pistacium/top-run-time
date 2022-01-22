@@ -15,6 +15,7 @@ def spaces(n):
         s += ' '
         n += 1
     return s
+
 def converttosecs(time):
     '''takes time in mm:ss:xxx and converts to seconds'''
     mins = int(time[0:2])
@@ -32,19 +33,20 @@ def decider(line):
     plength = converttosecs(ptype[0])
     
     if ptype[-1] == 'player)':
-        print('for the pause from', line[1], 'to', line[2])
+        print('for pause', line[0][:-15])
+        print('from', line[1], 'to', line[2], 'at', line[0].split()[1], 'IGT')
         ptype = input('enter type of pause: ')
         while ptype not in ['scp', 'dlp', 'tdlp', 'np', 'up']:
             ptype = input('try again champ: ')
         
     elif ptype[-1] == 'dimension)':
-        print('the time from', line[1], 'to', line[2], 'is a dimension load')
+        print('the time from', line[1], 'to', line[2], 'is a dimension load', line[0][:-15])
         ptype = 'dl'
     else:
         print(line)
         input('tell meera about this smth weird happened')
         quit()
-    #print(line)
+
     newl = ptype+spaces(len(ptype))+str(line[1].split()[0])+'      '+str(line[2].split()[0])+'      '+str(line[-1].split()[0])+'      '
     return plength, ptype, newl
 
