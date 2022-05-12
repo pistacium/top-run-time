@@ -20,4 +20,6 @@ You can then run it by double clicking on the .py file or going into terminal or
 For mac, it should be
 > python3 top_run.py
 
-Tutorial video: https://www.youtube.com/watch?v=BkZcR-QUnA4
+Tutorial video: https://www.youtube.com/watch?v=BkZcR-QUnA4  
+
+Also, thank u salix for doing v1.4 :D
